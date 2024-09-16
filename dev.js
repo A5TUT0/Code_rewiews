@@ -12,3 +12,11 @@ function validatePassword(password) {
     /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{12,}$/;
   return passwordPattern.test(password);
 }
+
+console.log(reverseString("hello")); // Output: "olleh"
+
+console.log(validateEmail("test@example.com")); // Output: true
+console.log(validateEmail("invalid-email")); // Output: false
+
+console.log(validatePassword("StrongPass1!")); // Output: true
+console.log(validatePassword("weakpass")); // Output: false
